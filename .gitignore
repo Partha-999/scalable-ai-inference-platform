@@ -18,7 +18,8 @@ validation-report.md
 
 # Scratch folder for raw experiments
 scratch/
-
+scripts/temp_results/
+*.csv
 # Frontend build artifacts and TypeScript info
 *.tsbuildinfo
 frontend/dist/
