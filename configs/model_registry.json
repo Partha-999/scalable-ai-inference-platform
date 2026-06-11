@@ -1,0 +1,26 @@
+{
+  "models": [
+    {"model_id": "text-sentiment-v1", "modality": "text", "framework": "transformers", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "distilbert-base-uncased-finetuned-sst-2-english", "description": "Sentiment baseline"},
+    {"model_id": "text-sentiment-v2", "modality": "text", "framework": "transformers", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "cardiffnlp/twitter-roberta-base-sentiment-latest", "description": "Sentiment candidate"},
+    {"model_id": "text-topic-v1", "modality": "text", "framework": "transformers", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "bert-base-uncased", "description": "General topic baseline"},
+    {"model_id": "text-topic-v2", "modality": "text", "framework": "transformers", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "microsoft/deberta-v3-base", "description": "Topic candidate"},
+    {"model_id": "text-intent-v1", "modality": "text", "framework": "transformers", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "distilbert-base-uncased", "description": "Intent baseline"},
+    {"model_id": "text-intent-v2", "modality": "text", "framework": "transformers", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "roberta-base", "description": "Intent candidate"},
+    {"model_id": "text-qa-v1", "modality": "text", "framework": "transformers", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "deepset/roberta-base-squad2", "description": "Question answering baseline"},
+    {"model_id": "text-qa-v2", "modality": "text", "framework": "transformers", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "distilbert-base-cased-distilled-squad", "description": "Question answering candidate"},
+    {"model_id": "text-entity-v1", "modality": "text", "framework": "transformers", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "dslim/bert-base-NER", "description": "NER baseline"},
+    {"model_id": "text-entity-v2", "modality": "text", "framework": "transformers", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "Jean-Baptiste/camembert-ner", "description": "NER candidate"},
+    {"model_id": "text-classify-v1", "modality": "text", "framework": "transformers", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "google-bert/bert-base-uncased", "description": "Multi-class baseline"},
+    {"model_id": "text-classify-v2", "modality": "text", "framework": "transformers", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "microsoft/MiniLM-L12-H384-uncased", "description": "Multi-class candidate"},
+    {"model_id": "vision-vit-v1", "modality": "vision", "framework": "tensorflow", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "google/vit-base-patch16-224", "description": "Vision transformer baseline"},
+    {"model_id": "vision-vit-v2", "modality": "vision", "framework": "tensorflow", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "google/vit-large-patch16-224", "description": "Vision transformer candidate"},
+    {"model_id": "vision-clip-v1", "modality": "vision", "framework": "tensorflow", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "openai/clip-vit-base-patch32", "description": "Image-text baseline"},
+    {"model_id": "vision-clip-v2", "modality": "vision", "framework": "tensorflow", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "openai/clip-vit-large-patch14", "description": "Image-text candidate"},
+    {"model_id": "vision-classify-v1", "modality": "vision", "framework": "tensorflow", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "microsoft/swin-base-patch4-window7-224", "description": "Classifier baseline"},
+    {"model_id": "vision-classify-v2", "modality": "vision", "framework": "tensorflow", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "microsoft/swin-large-patch4-window7-224", "description": "Classifier candidate"},
+    {"model_id": "vision-ocr-v1", "modality": "vision", "framework": "transformers", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "microsoft/trocr-small-printed", "task": "ocr", "description": "OCR small printed model"},
+    {"model_id": "vision-ocr-v2", "modality": "vision", "framework": "transformers", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "microsoft/trocr-base-printed", "task": "ocr", "description": "OCR base printed model"},
+    {"model_id": "vision-detect-v1", "modality": "vision", "framework": "tensorflow", "version": "1.0.0", "enabled": true, "ab_group": "control", "endpoint_name": "facebook/detr-resnet-50", "description": "Detection baseline"},
+    {"model_id": "vision-detect-v2", "modality": "vision", "framework": "tensorflow", "version": "1.1.0", "enabled": true, "ab_group": "candidate", "endpoint_name": "facebook/detr-resnet-101", "description": "Detection candidate"}
+  ]
+}

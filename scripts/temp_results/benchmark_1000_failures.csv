@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/inference/vision,"ConnectionRefusedError(10061, '[WinError 10061] No connection could be made because the target machine actively refused it.')",62,2026-06-09T17:59:50Z,2026-06-09T17:59:56Z
+POST,/inference/text,"ConnectionRefusedError(10061, '[WinError 10061] No connection could be made because the target machine actively refused it.')",319,2026-06-09T17:59:50Z,2026-06-09T17:59:56Z
